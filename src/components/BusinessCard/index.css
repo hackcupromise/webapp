@@ -1,3 +1,37 @@
 .BusinessCard {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.BusinessCard .business-name {
+    font-family: "Work Sans";
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.BusinessCard .rank {
+    font-family: "Work Sans";
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.BusinessCard .rank.high {
+    color: #2ed573;
+}
+
+.BusinessCard .rank.medium {
+    color: #ffa502;
+}
+
+.BusinessCard .rank.low {
+    color: #ff4757;
+}
+
+.BusinessCard p {
+    margin: 0;
 }

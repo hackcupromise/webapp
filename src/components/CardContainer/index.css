@@ -1,5 +1,12 @@
 .CardContainer {
+  position: relative;
+}
+
+.CardContainer .content {
   grid-area: content;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
   padding: 50px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
