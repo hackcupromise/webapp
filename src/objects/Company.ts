@@ -1,9 +1,8 @@
 interface Company {
     name: string
     totalPool: number
-    personalPool: number
+    personalLimit: number
     trust: number
-    rank: number
 }
 
 export default Company
