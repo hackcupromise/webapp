@@ -4,6 +4,7 @@ import { Charity } from '../../objects';
 import { RouteComponentProps, Switch, Route } from 'react-router';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { observer } from 'mobx-react';
+import { Link } from 'react-router-dom';
 
 interface Props extends RouteComponentProps<void> {
   charity?: Charity
@@ -14,6 +15,7 @@ class Sidebar extends React.Component<Props> {
   render() {
     return (
       <TransitionGroup className="Sidebar">
+      <Link to="/" className="brand-link"><h1 className="brand">Promise.</h1></Link>
         <CSSTransition
           key={location.pathname}
           timeout={{
@@ -38,8 +40,11 @@ class Sidebar extends React.Component<Props> {
                   <>
                     <h1 className="charity-name">{this.props.charity.name}</h1>
                     <p className="charity-description">{this.props.charity.description}</p>
+                    {this.props.charity.total ?
+                    <p className="total-donated"><em>{this.props.charity.total} NEO</em> donated to this charity through Promise.</p>
+                    : null }
                   </>
-                  : <p>idk</p>
+                  : null
                 )}
               />
             </Switch>

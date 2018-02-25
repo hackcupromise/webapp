@@ -9,4 +9,28 @@
 
 .Sidebar .charity-name {
   font-family: "Work Sans";
+  font-size: 60px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.Sidebar .charity-description {
+  width: 400px;
+}
+
+.Sidebar .total-donated {
+  width: 400px;
+  margin-top: 25px;
+}
+
+.Sidebar .brand-link {
+  text-decoration: none;
+  color: initial;
+}
+
+.Sidebar .brand {
+  font-family: Spectral;
+  letter-spacing: -1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
