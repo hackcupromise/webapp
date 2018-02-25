@@ -1,0 +1,10 @@
+.CharityCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CharityCard h1 {
+  font-family: Spectral;
+  font-size: 40px;
+}
