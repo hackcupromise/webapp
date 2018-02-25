@@ -1,0 +1,8 @@
+.App {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 550px 1fr;
+  grid-template-areas: "sidebar content";
+  text-align: center;
+  background-image: linear-gradient(to top right, #6078ea, #17ead9);
+}
