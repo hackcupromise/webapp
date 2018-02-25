@@ -6,6 +6,7 @@ import { Link, Switch, Route, RouteComponentProps } from 'react-router-dom';
 import BusinessCard from '../BusinessCard';
 import { observer } from 'mobx-react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import BigBusinessCard from '../BigBusinessCard';
 
 interface Props extends RouteComponentProps<void> {
   setCharity: (charity: Charity) => void
@@ -73,10 +74,22 @@ class CardContainer extends React.Component<Props> {
                 this.props.setCharity({name: 'MyTuition', description: 'Help me pay for my tuition bills! I\'m a broke college student, and donating to me would really help.'})
                 return (
                   <>
-                    <BusinessCard business={{name: 'Google', totalPool: 654321, personalLimit: 50, trust: 255}} />
+                    <Link to="/donate/mytuition/google" className="cardLink"><BusinessCard business={{name: 'Google', totalPool: 654321, personalLimit: 50, trust: 255}} /></Link>
                     {this.companies.sort(this.sortByTrust).map((company) => (
                       <BusinessCard key={company.name} business={company} />
                     ))}
+                  </>
+                )
+              }}
+            />
+            <Route
+              path="/donate/mytuition/google"
+              exact={true}
+              render={props => {
+                this.props.setCharity({name: 'MyTuition', description: 'Help me pay for my tuition bills! I\'m a broke college student, and donating to me would really help.'})
+                return (
+                  <>
+                    <BigBusinessCard business={{name: 'Google', totalPool: 654321, personalLimit: 50, trust: 255}} />
                   </>
                 )
               }}

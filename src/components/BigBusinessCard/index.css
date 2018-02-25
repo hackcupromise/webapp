@@ -1,0 +1,63 @@
+.BigBusinessCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 600px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-right: -300px;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+.BigBusinessCard .left {
+    text-align: left;
+}
+
+.BigBusinessCard .donate-button {
+    font-family: "Work Sans";
+    border: none;
+    border-radius: 35px;
+    height: 70px;
+    width: 200px;
+    background-color: #2ACCDE;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.BigBusinessCard .business-name {
+    font-family: "Work Sans";
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.BigBusinessCard .rank {
+    font-family: "Work Sans";
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.BigBusinessCard .rank.high {
+    color: #2ed573;
+}
+
+.BigBusinessCard .rank.medium {
+    color: #ffa502;
+}
+
+.BigBusinessCard .rank.low {
+    color: #ff4757;
+}
+
+.BigBusinessCard p {
+    margin: 0;
+}
+
