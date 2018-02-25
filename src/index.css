@@ -1,5 +1,18 @@
-body {
+html, body, #root {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
+  font-size: 16px;
+}
+
+body {
   font-family: sans-serif;
 }
+
+/*
+ * COLORS BECAUSE I'M NOT USING LESS
+ * @white: #f1f2f6
+ * @blue: #6078ea
+ * @cyan: #17ead9
+ */
