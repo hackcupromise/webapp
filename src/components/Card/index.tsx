@@ -1,10 +1,16 @@
 import * as React from 'react';
 import './index.css';
 
-class Card extends React.Component {
+interface Props {
+  children?: React.Component[]
+}
+
+class Card extends React.Component<Props> {
   render() {
     return (
-      <div className="Card" />
+      <div className="Card">
+        {this.props.children}
+      </div>
     );
   }
 }
